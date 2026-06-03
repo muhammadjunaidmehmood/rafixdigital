@@ -28,7 +28,8 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
-            ->brandName('Rafix Admin')
+            ->brandLogo(fn () => view('filament.brand-logo'))
+            ->favicon(asset('assets/images/logo/favicon.svg')) 
             ->colors([
                 'primary' => Color::Amber,
             ])
